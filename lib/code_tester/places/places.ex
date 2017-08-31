@@ -34,7 +34,7 @@ defmodule CodeTester.Places do
         :longitude => FakerElixir.Address.longitude
       }
     end
-    places |> IO.inspect
+    places
   end
 
   @doc """
