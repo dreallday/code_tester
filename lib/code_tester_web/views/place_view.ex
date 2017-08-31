@@ -2,8 +2,11 @@ defmodule CodeTesterWeb.PlaceView do
   use CodeTesterWeb, :view
   alias CodeTesterWeb.PlaceView
 
-  def render("index.json", %{places: places}) do
-    %{data: render_many(places, PlaceView, "place.json")}
+  def render("index.json", %{places: places, count: count}) do
+    %{
+      count: count,
+      data: render_many(places, PlaceView, "place.json")
+    }
   end
 
   def render("show.json", %{place: place}) do

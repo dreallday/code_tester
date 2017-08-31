@@ -15,7 +15,7 @@ defmodule CodeTesterWeb.PlaceController do
         10
     end
     places = Places.list_places(limit)
-    render(conn, "index.json", places: places)
+    render(conn, "index.json", places: places, count: limit)
   end
 
 
