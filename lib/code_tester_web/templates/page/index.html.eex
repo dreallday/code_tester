@@ -4,7 +4,7 @@
     <ul>
       <li>
         <p>
-          <b>GET</b> -> <span>/api/places</span><i>?limit=x</i> -> <span> { "data": [ places ], "count": x || 10 }
+          <b>GET</b> -> <span><a href="/api/places">/api/places</a></span><i><a href="/api/places?limit=3">?limit=x</a></i> -> <span> { "data": [ places ], "count": x || 10 }
         </p>
       </li>
     </ul>
